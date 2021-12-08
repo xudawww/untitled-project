@@ -1,6 +1,8 @@
 
-from flask import make_response,Flask,session,request,abort, Flask
+from flask import session, request, abort
 from . import routes
+
+
 @routes.before_request
 def csrf_protect():
     if request.method == "POST":

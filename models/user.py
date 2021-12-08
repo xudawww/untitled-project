@@ -9,7 +9,7 @@ class users(db.Model):
    email= db.Column(db.Text())
 
 
-def __init__(self,  username, password, ava,email):
+def __init__(self, nickname, username, password, ava,email):
    self. username =  username
    self.nickname = nickname
    self.password = password
